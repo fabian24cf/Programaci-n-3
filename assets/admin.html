@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Panel de Administracion </title>
+</head>
+<body>
 
+<header>
+    <h1> ⚙️ Panel de Administracion </h1>
+    <aside>
+        <ul>
+            <li><a href="index.html"> Volver a la Tienda </a> <br /></li>
+            <li><a href="#"> Cerrar Sesion </a> <br /></li>
+        </ul>
+    </aside>
+</header>
+<header>
+    <h2>Gestion de Productos</h2>
+</header>
+<table border="1">
+    <thead>
+
+    <tr>
+        <th>Id</th>
+        <th>Imagen</th>
+        <th>Nombre</th>
+        <th>Categoría</th>
+        <th>Precio</th>
+        <th>Stock</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td><img src="assets/hamburguesa.png" width="25" alt="hamburguesa"></td>
+            <td>Hamburguesa Chedar</td>
+            <td>Hamburguesa</td>
+            <td>10.000</td>
+            <td>5</td>
+            <td><a href="#">Editar</a> <a href="#">Eliminar</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img src="assets/pizza.png" width="25" alt="Piza"></td>
+            <td>Pizza Muzzarella</td>
+            <td>Pizza</td>
+            <td>12.000</td>
+            <td>6</td>
+            <td><a href="#">Editar</a> <a href="#">Eliminar</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img src="assets/coca-cola.png" width="25" alt="Coca Cola"></td>
+            <td>Coca Cola</td>
+            <td>Bebidas</td>
+            <td>3.000</td>
+            <td>15</td>
+            <td><a href="#">Editar</a> <a href="#">Eliminar</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<details>
+    <summary>📋✏️Agregar Producto Rapido</summary>
+    <form>
+        <br><br>
+        <label for="Nombre">Nombre Producto</label>
+        <input type="text" id="Nombre" required>
+
+        <br><br>
+        <label for="Precio">Precio</label>
+        <input type="number" id="Precio">
+
+        <br><br>
+        <label for="Stock">Stock Inicial</label>
+        <input type="number" id="Stock">
+
+        <br><br>
+        <label for="Categoria">Categoria</label>
+        <select id="Categoria">
+            <option>Elija una Opcion..</option>
+            <option>Hamburguesa</option>
+            <option> Pizza</option>
+            <option>Bebida</option>
+        </select>
+
+        <br><br>
+        <label for="Descripcion">Descripción</label>
+        <textarea id="Descripcion" rows="4" placeholder="Ingresa los ingredientes..."></textarea>
+        <br><br>
+
+        <button type="submit">Guardar Producto</button>
+
+    </form>
+</details>
+<footer>
+    <p>&copy; 2026 Fabian Ignacio Cardozo - Panel de Administracion - Food Store v1.0</p>
+</footer>
+</body>
+</html>
